@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hasil Analisis SWOT dengan Metode SPK</title>
+    <link rel="stylesheet" type="text/css" href="styleresult.css">
+</head>
+<body>
+    <h1>Hasil Analisis SWOT dengan Metode SPK</h1>
+    <table>
+        <tr>
+            <th>Kategori</th>
+            <th>Skor Terbobot</th>
+        </tr>
+        <tr>
+            <td>Kekuatan</td>
+            <td><?php echo $total_skor_terbobot_kekuatan; ?></td>
+        </tr>
+        <!-- Tambahkan baris untuk faktor kekuatan lainnya -->
+
+        <tr>
+            <td>Kelemahan</td>
+            <td><?php echo $total_skor_terbobot_kelemahan; ?></td>
+        </tr>
+        <!-- Tambahkan baris untuk faktor kelemahan lainnya -->
+
+        <tr>
+            <td>Peluang</td>
+            <td><?php echo $total_skor_terbobot_peluang; ?></td>
+        </tr>
+        <!-- Tambahkan baris untuk faktor peluang lainnya -->
+
+        <tr>
+            <td>Ancaman</td>
+            <td><?php echo $total_skor_terbobot_ancaman; ?></td>
+        </tr>
+        <!-- Tambahkan baris untuk faktor ancaman lainnya -->
+    </table>
+    <div class="container">
+        <!-- Isi hasil analisis SWOT di sini --> 
+        <h2>Faktor Utama dalam Pengambilan Keputusan: <?php echo implode(", ", $faktor_utama); ?></h2>
+    </div>
+   
+    
+</body>
+</html>
